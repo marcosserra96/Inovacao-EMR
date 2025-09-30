@@ -7,6 +7,34 @@
   <title>Quiz Innovation Break</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .ranking-home {
+      max-width: 360px;
+      margin: 24px auto 0;
+      background: #ffffff;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+    .ranking-home h2 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      color: #00334d;
+      text-align: center;
+    }
+    .ranking-home ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .ranking-home li {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
@@ -19,6 +47,11 @@
       <button type="submit" class="btn">Começar</button>
     </form>
 
+    <div class="ranking-home">
+      <h2>Ranking ao Vivo 🏆</h2>
+      <ul id="top10-home"></ul>
+    </div>
+
     <p class="muted">Somente uma tentativa por participante.</p>
   </main>
 
@@ -27,6 +60,6 @@
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
   <script src="scripts/firebase.js"></script>
   <script src="scripts/questions.js"></script>
+  <script src="scripts/rankingHome.js"></script>
 </body>
 </html>
-
