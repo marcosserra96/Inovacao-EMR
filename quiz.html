@@ -1,0 +1,27 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Innovation Break</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="card" id="quiz-container">
+      <h2 id="pergunta"></h2>
+      <ul id="alternativas" class="opcoes"></ul>
+      <p id="contador">Tempo restante: <span id="tempo">10</span>s</p>
+    </div>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="scripts/firebase.js"></script>
+  <script src="scripts/questions.js"></script>
+  <script src="scripts/quiz.js"></script>
+</body>
+</html>
