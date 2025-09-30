@@ -1,0 +1,40 @@
+<!-- ranking.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking - Quiz Innovation Break</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .ranking-list {
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+    .ranking-list li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Ranking Final 🏆</h1>
+    <ul id="ranking" class="card ranking-list"></ul>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="scripts/firebase.js"></script>
+  <script src="scripts/ranking.js"></script>
+</body>
+</html>
