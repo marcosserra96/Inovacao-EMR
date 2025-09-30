@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Innovation Break</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Quiz Innovation Break</h1>
+    <p class="subtitle">Responda e marque pontos por acerto e agilidade! ⚡</p>
+
+    <form id="start-form" class="card">
+      <label for="name">Seu nome</label>
+      <input id="name" type="text" placeholder="Ex.: Ana Souza" required />
+      <button type="submit" class="btn">Começar</button>
+    </form>
+
+    <p class="muted">Somente uma tentativa por participante.</p>
+  </main>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="scripts/firebase.js"></script>
+</body>
+</html>
